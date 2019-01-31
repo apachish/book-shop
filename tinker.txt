@@ -1,0 +1,61 @@
+books php artisan tinker       
+Psy Shell v0.9.9 (PHP 7.1.26-1+ubuntu18.04.1+deb.sury.org+1 — cli) by Justin Hileman
+>>> $book= new App\Book;
+=> App\Book {#2905}
+>>> $book->name = 'یک اتفاق  مسخره'
+=> "یک اتفاق  مسخره"
+>>> $book->pages = 92
+=> 92
+>>> $book->ISBN = '978-964-9971-72-8'
+=> "978-964-9971-72-8"
+>>> $book->price = 8000
+=> 8000
+>>> $book->published_at = '2018-04-12'
+=> "2018-04-12"
+>>> $book->save();
+=> true
+>>> App\Book::create(['name'=>'جنگ بی پایان','pages'=>114,'ISBN'=>'964-8453-03-9','price'=>1500,'published_at'=>'2009-07-18'])
+=> App\Book {#2908
+     name: "جنگ بی پایان",
+     pages: 114,
+     ISBN: "964-8453-03-9",
+     price: 1500,
+     published_at: "2009-07-18",
+     updated_at: "2019-01-17 18:47:09",
+     created_at: "2019-01-17 18:47:09",
+     id: 2,
+   }
+>>> App\Book::create(['name'=>'منطق','pages'=>180,'ISBN'=>'987-964-9971-75-9','price'=>6000,'published_at'=>'2007-10-19'])
+=> App\Book {#2926
+     name: "منطق",
+     pages: 180,
+     ISBN: "987-964-9971-75-9",
+     price: 6000,
+     published_at: "2007-10-19",
+     updated_at: "2019-01-17 18:49:27",
+     created_at: "2019-01-17 18:49:27",
+     id: 3,
+   }
+>>> App\Book::create(['name'=>'در ستایش  پوپولیسم','pages'=>253,'ISBN'=>'978-600-91155-5-6','price'=>3000,'published_at'=>'2010-01-10'])
+=> App\Book {#2908
+     name: "در ستایش  پوپولیسم",
+     pages: 253,
+     ISBN: "978-600-91155-5-6",
+     price: 3000,
+     published_at: "2010-01-10",
+     updated_at: "2019-01-17 18:52:28",
+     created_at: "2019-01-17 18:52:28",
+     id: 4,
+   }
+>>> App\Book::create(['name'=>'فکرت را عوض کن، زندگیت  عوض  می شود','pages'=>343,'ISBN'=>'978-964-6839-45-8','price'=>12500,'published_at'=>'2004-07-20'])
+=> App\Book {#2926
+     name: "فکرت را عوض کن، زندگیت  عوض  می شود",
+     pages: 343,
+     ISBN: "978-964-6839-45-8",
+     price: 12500,
+     published_at: "2004-07-20",
+     updated_at: "2019-01-17 18:55:47",
+     created_at: "2019-01-17 18:55:47",
+     id: 5,
+   }
+
