@@ -17,10 +17,17 @@ class CreateBooksTable extends Migration
             $table->increments('id');
             $table->string('name',256);
             $table->unsignedInteger('pages');
+            $table->unsignedInteger('user_id');
             $table->string('ISBN',10);
             $table->integer('price');
             $table->date('published_at');
             $table->timestamps();
+
+            $table->foreign('user_id')
+                ->references('id')
+                ->on('users')
+                ->onDelete('cascade')
+                ->onUpdate('cascade');
         });
     }
 
