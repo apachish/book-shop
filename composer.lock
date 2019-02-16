@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ca7343889332c2b8ecca11c251430c",
+    "content-hash": "dfc85f937b417deb129b767d574a41da",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -636,6 +636,90 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "kavenegar/laravel",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KaveNegar/kavenegar-laravel.git",
+                "reference": "3554e1b456a8c3618817effe4ce5d399aa59d93c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KaveNegar/kavenegar-laravel/zipball/3554e1b456a8c3618817effe4ce5d399aa59d93c",
+                "reference": "3554e1b456a8c3618817effe4ce5d399aa59d93c",
+                "shasum": ""
+            },
+            "require": {
+                "kavenegar/php": "*"
+            },
+            "type": "laravel-package",
+            "autoload": {
+                "psr-4": {
+                    "Kavenegar\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kavenegar API Team",
+                    "email": "support@kavenegar.com"
+                }
+            ],
+            "description": "laravel 4 and 5 kavenegar integration",
+            "keywords": [
+                "api",
+                "kavenegar",
+                "laravel",
+                "sms"
+            ],
+            "time": "2017-03-03T07:23:20+00:00"
+        },
+        {
+            "name": "kavenegar/php",
+            "version": "v1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KaveNegar/kavenegar-php.git",
+                "reference": "02dac39b0376dd4b434d848abdd4f450f83c4380"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KaveNegar/kavenegar-php/zipball/02dac39b0376dd4b434d848abdd4f450f83c4380",
+                "reference": "02dac39b0376dd4b434d848abdd4f450f83c4380",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kavenegar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kavenegar API Team",
+                    "email": "support@kavenegar.com"
+                }
+            ],
+            "description": "A PHP wrapper for Kavenegar's API",
+            "homepage": "http://github.com/Kavenegar/kavenegar-php",
+            "keywords": [
+                "api",
+                "kavenegar",
+                "sms"
+            ],
+            "time": "2018-03-19T16:35:00+00:00"
         },
         {
             "name": "laravel/framework",

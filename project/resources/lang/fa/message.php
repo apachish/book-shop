@@ -46,4 +46,5 @@ return [
     "update Book" => "به روز رسانی کتاب",
     "Edit" => "ویرایش",
     "update" => "به روزرسانی",
+    "E-Mail Address"=>"ایمیل"
 ];

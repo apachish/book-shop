@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Author;
 use App\Book;
 use App\Category;
+use App\Events\BookCreated;
 use App\Http\Requests\StoreBookPost;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -35,12 +36,15 @@ class BooksController extends Controller
         $book = Auth::user()->books()->create($request->except('_token'));
         $book->categories()->attach($request->get('category_id'));
         $book->authors()->attach($request->get('author_id'));
+        event(new BookCreated($book,Auth::user()));
 
         return redirect('/books');
     }
     public function edit($id)
     {
         $book = Book::find($id);
+        $this->authorize('update',$book);
+
         $categories = Category::all();
         $authors = Author::all();
         return view('books.edit',compact('book','categories','authors'));
